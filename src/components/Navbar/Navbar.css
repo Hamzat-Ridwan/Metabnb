@@ -32,3 +32,26 @@ nav button{
     border-radius: 10px;
     border: none;
 }
+
+nav .menu{
+    display: none;
+}
+
+nav .menu svg{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 450px) {
+    nav .logo{
+        width: 40%;
+    }
+    nav ul{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+}
