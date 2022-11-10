@@ -1,5 +1,6 @@
 nav{
-    padding: 20px 40px;
+    padding: 20px 5%;
+    /* width: 80%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
