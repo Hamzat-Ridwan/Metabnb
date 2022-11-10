@@ -37,6 +37,26 @@ nav .menu{
     display: none;
 }
 
+nav .menu div{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+
+        padding: 1rem;
+        height: 100vh; width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        background: rgb(235, 235, 235);
+}
+
+/* nav .menu div svg{
+    colo
+} */
+
 nav .menu svg{
     font-size: 28px;
 }
@@ -51,8 +71,18 @@ nav .menu svg{
     nav ul{
         display: none;
     }
+    nav .menu ul{
+        display: block;
+        margin: 50px 0 30px;
+    }
+    nav .menu ul li{
+        margin: 20px 0;
+    }
     nav button{
         display: none;
+    }
+    nav .menu button{
+        display: block;
     }
     nav .menu{
         display: block;
