@@ -1,0 +1,34 @@
+nav{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 190px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav button{
+    padding: 14px 26px;
+    color: #fff;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border-radius: 10px;
+    border: none;
+}
