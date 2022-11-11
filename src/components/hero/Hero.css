@@ -30,6 +30,7 @@ main p{
 
 main .search{
     width:90%;
+    padding-top: 0;
 }
 
 main .search input{
@@ -92,6 +93,7 @@ main .images div.col-1{
     main .texts{
         width: 100%;
         margin-top: 0px;
+        margin-bottom: 0;
     }
 
     main .images{
@@ -109,8 +111,16 @@ main .images div.col-1{
         height: auto;
     }
 
-    main .texts{
-        font-size: 300px;
+    main .texts h1{
+        font-size: 40px;
+    }
+
+    main .texts p{
+        font-size: 20px;
+    }
+
+    main .texts .search{
+        margin-bottom: 30px;
     }
 
     .bottom-stipe{
