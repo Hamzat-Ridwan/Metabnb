@@ -111,14 +111,6 @@ main .images div.col-1{
         height: auto;
     }
 
-    main .texts h1{
-        font-size: 40px;
-    }
-
-    main .texts p{
-        font-size: 20px;
-    }
-
     main .texts .search{
         margin-bottom: 30px;
     }
@@ -134,6 +126,13 @@ main .images div.col-1{
 }
 
 @media screen and (max-width: 450px) {
+    main .texts h1{
+        font-size: 40px;
+    }
+
+    main .texts p{
+        font-size: 20px;
+    }
     .bottom-stipe img{
         width: 25%;
     }
