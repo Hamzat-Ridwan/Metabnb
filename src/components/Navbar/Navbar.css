@@ -67,7 +67,7 @@ nav .menu svg{
         padding: 20px 10px;
     }
     nav .logo{
-        width: 40vw;
+        width: 200px;
     }
     nav ul{
         display: none;
@@ -87,5 +87,11 @@ nav .menu svg{
     }
     nav .menu{
         display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav .logo{
+        width: 40vw;
     }
 }
