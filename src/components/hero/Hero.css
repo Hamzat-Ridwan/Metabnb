@@ -132,3 +132,9 @@ main .images div.col-1{
     }
 
 }
+
+@media screen and (max-width: 450px) {
+    .bottom-stipe img{
+        width: 25%;
+    }
+}
