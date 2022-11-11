@@ -2,10 +2,12 @@ main{
     padding: 0 5%;
     display: flex;
     justify-content: space-between;
+    margin-top: 70px;
 }
 
 main .texts{
     width: 54%;
+    margin-top: 20px;
 }
 
 main h1{
@@ -33,7 +35,7 @@ main .images{
 main .images div{
     display: flex;
     flex-direction: column;
-    margin: 0 5px;
+    margin: 0 7px;
 }
 
 main .images div img{
@@ -50,10 +52,12 @@ main .images div.col-1{
         display: block;
         padding: 0 4%;
         overflow: hidden;
+        margin-top: 50px;
     }
 
     main .texts{
         width: 100%;
+        margin-top: 0px;
     }
 
     main .images{
@@ -67,8 +71,12 @@ main .images div.col-1{
 
     main .images img{
         /* width: 170px; */
-        width: 45vw;
+        width: 40vw;
         height: auto;
+    }
+
+    main .texts{
+        font-size: 300px;
     }
 
 }
