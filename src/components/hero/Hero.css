@@ -28,6 +28,32 @@ main p{
     margin: 45px 0;
 }
 
+main .search{
+    width:90%;
+}
+
+main .search input{
+    width: 65%;
+    border: 1px solid #A3A3A3;
+    border-radius: 8px 0px 0px 8px;
+    border-right: none;
+    height: 50px;
+    padding-left: 10px;
+}
+
+main .search input:focus{
+    outline: none;
+}
+
+main .search button{
+    width: 35%;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    height: 50px;
+    color: white;
+}
+
 main .images{
     display: flex;
 }
@@ -44,6 +70,14 @@ main .images div img{
 
 main .images div.col-1{
     margin-top: 100px;
+}
+
+.bottom-stipe{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 100px;
+    background: #A02279;
+    margin: 50px 0;
 }
 
 @media screen and (max-width: 850px) {
@@ -77,6 +111,14 @@ main .images div.col-1{
 
     main .texts{
         font-size: 300px;
+    }
+
+    .bottom-stipe{
+        padding: 5px 5%;
+    }
+
+    .bottom-stipe img{
+        width: 20%;
     }
 
 }
