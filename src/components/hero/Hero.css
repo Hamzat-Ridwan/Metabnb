@@ -101,13 +101,16 @@ main .images div.col-1{
         justify-content: center;
     }
 
+    main .images div{
+        margin: 0 12px;
+    }
+
     main .images div.col-1{
         margin-top: 40px;
     }
 
     main .images img{
-        /* width: 170px; */
-        width: 40vw;
+        width: 35vw;
         height: auto;
     }
 
@@ -136,5 +139,12 @@ main .images div.col-1{
     }
     .bottom-stipe img{
         width: 25%;
+    }
+    main .images img{
+        width: 40vw;
+        height: auto;
+    }
+    main .images div{
+        margin: 0 7px;
     }
 }
