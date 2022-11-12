@@ -1,4 +1,5 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext, useEffect, useRef} from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ConnectContext } from '../../context/useConnect'
 import close from '../../assets/x.svg'
 import forward from '../../assets/forward.svg'
@@ -8,11 +9,36 @@ import './Connect.css'
 
 const Connect = () => {
     const {showConnect, setShowConnect} = useContext(ConnectContext)
+    let menuRef = useRef()
+    useEffect(()=>{
+        let handler = e =>{
+            if(!menuRef.current.contains(e.target)){
+                setShowConnect(false)
+            }
+        }
+
+        document.addEventListener('mousedown', handler)
+        return () =>{
+            document.removeEventListener('mousedown', handler)
+        }
+    })
   return (
     <>
+    <AnimatePresence>
     {showConnect &&
-    <div className='connect' >
-        <div className='connect-card'>
+    <motion.div className='connect' 
+        key='con'
+        initial={{scale: 1, opacity: 1}}
+        // exit={{ opacity: .6}}
+    >
+        {/* <AnimatePresence> */}
+        <motion.div className='connect-card' ref={menuRef}
+            key='box'
+            initial={{scale: .6, opacity: .6}}
+            exit={{scale: .8, opacity: .6, transition: {duration: .2}}}
+            animate={{scale: 1, opacity: 1}}
+            transition={{type: 'spring', duration: .5}}
+        >
             <div className='head'>
                 <h3>Connect Wallet</h3>
                 <img src={close} alt='close' onClick={()=> setShowConnect(false)}/>
@@ -34,9 +60,11 @@ const Connect = () => {
                     <img src={forward} alt='forward' />
                 </div>
             </div>
-        </div>
-    </div>
+        </motion.div>
+        {/* </AnimatePresence> */}
+    </motion.div>
     }
+    </AnimatePresence>
     </>
   )
 }

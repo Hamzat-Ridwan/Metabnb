@@ -1,6 +1,6 @@
 import React, {useContext, useState} from 'react'
 import { ConnectContext } from '../../context/useConnect'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import Logo from '../../assets/logo.svg'
 import {HiMenuAlt3} from 'react-icons/hi'
 import {RiCloseFill} from 'react-icons/ri'
@@ -24,9 +24,12 @@ const Navbar = () => {
         <button onClick={()=> {setShowConnect(true), console.log(showConnect)}}>Connect wallet</button>
         <div className='menu'>
             <HiMenuAlt3 onClick={()=> setToggle(true)}/>
+            <AnimatePresence>
             {toggle && (
                 <motion.div
+                    key='side'
                     initial={{x: '100vw'}}
+                    exit={{x: '100vw', transition: {duration: .2}}}
                     animate={{x: 10}}
                     transition={{type: 'spring', duration: .5}}
                 >
@@ -40,6 +43,7 @@ const Navbar = () => {
                     <button onClick={()=> {setToggle(false), setShowConnect(true)}}>Connect wallet</button>
                 </motion.div>
             )}
+            </AnimatePresence>
         </div>
     </nav>
   )
