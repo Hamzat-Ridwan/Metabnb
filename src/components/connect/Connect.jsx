@@ -1,10 +1,10 @@
 import React, {useContext, useEffect, useRef} from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ConnectContext } from '../../context/useConnect'
-import close from '../../assets/x.svg'
-import forward from '../../assets/forward.svg'
-import fox from '../../assets/fox.svg'
-import wallet from '../../assets/wallet.svg'
+import {ReactComponent as Close} from '../../assets/x.svg'
+import { ReactComponent as Forward} from '../../assets/forward.svg'
+import {ReactComponent as Fox} from '../../assets/fox.svg'
+import { ReactComponent as Wallet} from '../../assets/wallet.svg'
 import './Connect.css'
 
 const Connect = () => {
@@ -40,23 +40,23 @@ const Connect = () => {
         >
             <div className='head'>
                 <h3>Connect Wallet</h3>
-                <img src={close} alt='close' onClick={()=> setShowConnect(false)}/>
+                <Close onClick={()=> setShowConnect(false)}/>
             </div>
             <div className='container'>
                 <p>Choose your preferred wallet:</p>
                 <div className='option'>
                     <span>
-                        <img src={fox} alt='fox' />
+                        <Fox />
                         <h4>Metamask</h4>
                     </span>
-                    <img src={forward} alt='forward' />
+                    <Forward />
                 </div>
                 <div className='option'>
                     <span>
-                        <img src={wallet} alt='wallet' />
+                        <Wallet />
                         <h4>WalletConnect</h4>
                     </span>
-                    <img src={forward} alt='forward' />
+                    <Forward />
                 </div>
             </div>
         </motion.div>
