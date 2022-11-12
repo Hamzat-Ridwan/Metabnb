@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ConnectContext } from '../../context/useConnect'
 import {ReactComponent as Close} from '../../assets/x.svg'
 import { ReactComponent as Forward} from '../../assets/forward.svg'
+// import { ReactComponent as Wallet} from '../../assets/wallet.svg'
+import Wallet from '../../assets/wallet.svg'
 import {ReactComponent as Fox} from '../../assets/fox.svg'
-import { ReactComponent as Wallet} from '../../assets/wallet.svg'
 import './Connect.css'
 
 const Connect = () => {
@@ -53,7 +54,8 @@ const Connect = () => {
                 </div>
                 <div className='option'>
                     <span>
-                        <Wallet />
+                        {/* <Wallet /> */}
+                        <img src={Wallet} alt='wallet' />
                         <h4>WalletConnect</h4>
                     </span>
                     <Forward />
