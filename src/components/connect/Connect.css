@@ -1,0 +1,65 @@
+.connect{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(64, 64, 64, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.connect .connect-card{
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.connect-card .head{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #CFD8DC;
+}
+
+.connect-card .container{
+    padding: 15px;
+}
+
+.connect-card .option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #CFD8DC;
+    margin-top: 10px;
+}
+
+.connect-card .container p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.connect-card .option:hover{
+    background: #F8F9FA;
+}
+
+.connect-card .option h4{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.connect-card span{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .connect .connect-card{
+        width: 80vw;
+    }
+}

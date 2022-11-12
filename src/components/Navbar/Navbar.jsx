@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
+import { ConnectContext } from '../../context/useConnect'
 import { motion } from 'framer-motion'
 import Logo from '../../assets/logo.svg'
 import {HiMenuAlt3} from 'react-icons/hi'
@@ -8,6 +9,7 @@ import './Navbar.css'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
+    const {setShowConnect, showConnect} = useContext(ConnectContext)
   return (
     <nav>
         <div>
@@ -19,7 +21,7 @@ const Navbar = () => {
             <li><Link >NFTs</Link></li>
             <li><Link >Community</Link></li>
         </ul>
-        <button>Connect wallet</button>
+        <button onClick={()=> {setShowConnect(true), console.log(showConnect)}}>Connect wallet</button>
         <div className='menu'>
             <HiMenuAlt3 onClick={()=> setToggle(true)}/>
             {toggle && (
@@ -35,7 +37,7 @@ const Navbar = () => {
                         <li><Link onClick={()=> setToggle(false)}>NFTs</Link></li>
                         <li><Link onClick={()=> setToggle(false)}>Community</Link></li>
                     </ul>
-                    <button onClick={()=> setToggle(false)}>Connect wallet</button>
+                    <button onClick={()=> {setToggle(false), setShowConnect(true)}}>Connect wallet</button>
                 </motion.div>
             )}
         </div>
