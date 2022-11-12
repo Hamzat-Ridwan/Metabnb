@@ -29,7 +29,7 @@ const Navbar = () => {
                 <motion.div
                     key='side'
                     initial={{x: '100vw'}}
-                    exit={{x: '100vw', transition: {duration: .2}}}
+                    exit={{x: '100vw', transition: {duration: .1}}}
                     animate={{x: 10}}
                     transition={{type: 'spring', duration: .5}}
                 >

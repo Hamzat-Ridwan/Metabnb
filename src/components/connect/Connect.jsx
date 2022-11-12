@@ -31,7 +31,6 @@ const Connect = () => {
         initial={{scale: 1, opacity: 1}}
         exit={{ opacity: 0, transition: {duration: .2}}}
     >
-        {/* <AnimatePresence> */}
         <motion.div className='connect-card' ref={menuRef}
             key='box'
             initial={{scale: .6, opacity: .6}}
@@ -61,7 +60,6 @@ const Connect = () => {
                 </div>
             </div>
         </motion.div>
-        {/* </AnimatePresence> */}
     </motion.div>
     }
     </AnimatePresence>
