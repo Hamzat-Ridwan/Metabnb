@@ -1,0 +1,40 @@
+.adventures{
+    padding: 0 5%;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+}
+
+.adventures h1{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.adventures .cards-con{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    /* margin: 0 auto; */
+}
+
+/* @media screen and (max-width: 1300px) {
+    .adventures .cards-con{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} */
+
+@media screen and (max-width: 1025px) {
+    .adventures .cards-con{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .adventures .cards-con{
+        grid-template-columns: 1fr;
+    }
+}

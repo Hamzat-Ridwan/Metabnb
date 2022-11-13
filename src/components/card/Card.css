@@ -1,0 +1,30 @@
+.card{
+    padding: 16px;
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    width: 292px;
+    height: 372px;
+}
+
+.card div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card div h4{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.card div p{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 450px) {
+    /* .card{
+        width: 73vw;
+    } */
+}
