@@ -11,3 +11,22 @@ export const HomeCards = [
     Images.card7,
     Images.card8,
 ]
+
+export const PlacesCards = [
+    Images.place1,
+    Images.place2,
+    Images.place3,
+    Images.place4,
+    Images.place5,
+    Images.place6,
+    Images.place7,
+    Images.place8,
+    Images.place9,
+    Images.place10,
+    Images.place11,
+    Images.place12,
+    Images.place13,
+    Images.place14,
+    Images.place15,
+    Images.place16,
+]

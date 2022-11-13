@@ -1,0 +1,29 @@
+.places .cards-con{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0 5%;
+    margin-bottom: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+    .places .cards-con{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .places .cards-con{
+        grid-template-columns: 1fr 1fr;
+        min-width: 70vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .places .cards-con{
+        grid-template-columns: 1fr;
+    }
+}

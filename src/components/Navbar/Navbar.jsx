@@ -16,8 +16,8 @@ const Navbar = () => {
             <img src={Logo} alt='logo' className='logo' />
         </div>
         <ul>
-            <li><Link >Home</Link></li>
-            <li><Link >Place to stay</Link></li>
+            <li><Link to='/' >Home</Link></li>
+            <li><Link to='/places'>Place to stay</Link></li>
             <li><Link >NFTs</Link></li>
             <li><Link >Community</Link></li>
         </ul>
@@ -35,8 +35,8 @@ const Navbar = () => {
                 >
                     <RiCloseFill onClick={()=> setToggle(false)} />
                     <ul>
-                        <li><Link onClick={()=> setToggle(false)}>Home</Link></li>
-                        <li><Link onClick={()=> setToggle(false)}>Place to stay</Link></li>
+                        <li><Link to='/' onClick={()=> setToggle(false)}>Home</Link></li>
+                        <li><Link to='/places' onClick={()=> setToggle(false)}>Place to stay</Link></li>
                         <li><Link onClick={()=> setToggle(false)}>NFTs</Link></li>
                         <li><Link onClick={()=> setToggle(false)}>Community</Link></li>
                     </ul>
