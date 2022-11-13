@@ -24,12 +24,13 @@
     line-height: 35px;
 }
 
-.discover button{
+.discover .content button{
     padding: 14px 33px;
     background: #fff;
-    color: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    color: #A02279;
     border: none;
     border-radius: 8px;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 850px) {

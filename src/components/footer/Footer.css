@@ -4,4 +4,59 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 25px 5%;
+    padding-top: 30px;
+}
+
+.footer .socials{
+    margin: 90px 0 50px;
+}
+
+.footer .socials svg{
+    margin-right: 40px;
+}
+
+.footer .copy{
+    display: flex;
+}
+
+.footer .copy svg{
+    margin-right: 10px;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer li{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer h3{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 850px) {
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer>div{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer{
+        grid-template-columns: 1fr;
+    }
 }
