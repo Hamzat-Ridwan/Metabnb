@@ -1,9 +1,13 @@
 .card{
-    padding: 16px;
+    padding: 4%;
     border: 1px solid #D7D7D7;
     border-radius: 15px;
-    width: 292px;
-    height: 372px;
+    width: 282px;
+    /* height: 372px; */
+}
+
+.card img{
+    width: 100%;
 }
 
 .card div{
@@ -21,6 +25,10 @@
 .card div p{
     font-weight: 400;
     font-size: 12px;
+}
+
+.card svg{
+    margin-right: 5px;
 }
 
 @media screen and (max-width: 450px) {

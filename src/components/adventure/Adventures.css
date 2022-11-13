@@ -1,8 +1,8 @@
 .adventures{
-    padding: 0 5%;
-    /* display: flex;
+    padding: 0 4%;
+    display: flex;
     justify-content: center;
-    text-align: center; */
+    flex-direction: column;
 }
 
 .adventures h1{
@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 45px;
 }
 
 .adventures .cards-con{
@@ -18,22 +21,23 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
-/* @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
     .adventures .cards-con{
         grid-template-columns: 1fr 1fr 1fr;
     }
-} */
+}
 
 @media screen and (max-width: 1025px) {
     .adventures .cards-con{
         grid-template-columns: 1fr 1fr;
+        min-width: 70vw;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .adventures .cards-con{
         grid-template-columns: 1fr;
     }
