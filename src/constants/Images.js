@@ -1,12 +1,11 @@
 import card1 from '../assets/card1.png'
-import card2 from '../assets/card2.jpg'
-import card3 from '../assets/card3.jpg'
-import card4 from '../assets/card4.jpg'
-import card5 from '../assets/card5.jpg'
-import card6 from '../assets/card6.jpg'
-import card7 from '../assets/card7.jpg'
-import card8 from '../assets/card8.jpg'
-// import card9 from '../assets/card9.jpg'
+import card2 from '../assets/card2.png'
+import card3 from '../assets/card3.png'
+import card4 from '../assets/card4.png'
+import card5 from '../assets/card5.png'
+import card6 from '../assets/card6.png'
+import card7 from '../assets/card7.png'
+import card8 from '../assets/card8.png'
 
 export default {
     card1,
@@ -16,6 +15,5 @@ export default {
     card5,
     card6,
     card7,
-    card8,
-    // card9
+    card8
 }

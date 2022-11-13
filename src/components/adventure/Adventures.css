@@ -41,4 +41,7 @@
     .adventures .cards-con{
         grid-template-columns: 1fr;
     }
+    .adventures h1{
+        font-size: 39px;
+    }
 }
