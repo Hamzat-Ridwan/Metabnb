@@ -41,7 +41,11 @@
         width: 100%;
     }
 
-    .discover svg{
+    .discover .img{
+        width: 90vw;
+        margin-top: 40px;
+    }
+    .discover .img img{
         width: 100%;
     }
 }
