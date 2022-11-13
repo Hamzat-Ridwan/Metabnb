@@ -1,0 +1,47 @@
+.discover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+    margin-top: 70px;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    color: white;
+}
+
+.discover .content{
+    width: 35%;
+}
+
+.discover h2{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.discover p{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 25px 0;
+    line-height: 35px;
+}
+
+.discover button{
+    padding: 14px 33px;
+    background: #fff;
+    color: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border: none;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 850px) {
+    .discover{
+        display: block;
+    }
+
+    .discover .content{
+        width: 100%;
+    }
+
+    .discover svg{
+        width: 100%;
+    }
+}
