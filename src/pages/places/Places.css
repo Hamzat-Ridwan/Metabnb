@@ -47,15 +47,27 @@
         grid-template-columns: 1fr 1fr;
         min-width: 70vw;
     }
+
+    .places .filters .texts{
+        width: 75%;
+        overflow: scroll;
+    }
+    .places .filters .texts p{
+        margin-right: 20px;
+        white-space: nowrap;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .places .cards-con{
         grid-template-columns: 1fr;
     }
+}
+
+@media screen and (max-width: 450px) {
 
     .places .filters .texts{
-        width: 55%;
+        width: 58%;
         overflow: scroll;
     }
     .places .filters .texts p{
