@@ -9,6 +9,33 @@
     margin-bottom: 75px;
 }
 
+.places .filters{
+    padding: 0 5%;
+    margin: 100px 0 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.places .filters .texts{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.places .filters .setting{
+    display: flex;
+    align-items: center;
+    border: 1px solid #B4B4B4;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.places .filters .setting p{
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 1200px) {
     .places .cards-con{
         grid-template-columns: 1fr 1fr 1fr;
@@ -25,5 +52,14 @@
 @media screen and (max-width: 600px) {
     .places .cards-con{
         grid-template-columns: 1fr;
+    }
+
+    .places .filters .texts{
+        width: 55%;
+        overflow: scroll;
+    }
+    .places .filters .texts p{
+        margin-right: 20px;
+        white-space: nowrap;
     }
 }
