@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext, useState, useEffect, useRef} from 'react'
 import { ConnectContext } from '../../context/useConnect'
 import { motion, AnimatePresence } from 'framer-motion'
 import Logo from '../../assets/logo.svg'
@@ -10,6 +10,19 @@ import './Navbar.css'
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     const {setShowConnect, showConnect} = useContext(ConnectContext)
+    let menuRef = useRef()
+    useEffect(()=>{
+        let handler = e =>{
+            if(!menuRef.current.contains(e.target)){
+                setToggle(false)
+            }
+        }
+
+        document.addEventListener('mousedown', handler)
+        return () =>{
+            document.removeEventListener('mousedown', handler)
+        }
+    })
   return (
     <nav>
         <div>
@@ -32,6 +45,7 @@ const Navbar = () => {
                     exit={{x: '100vw', transition: {duration: .1}}}
                     animate={{x: 10}}
                     transition={{type: 'spring', duration: .5}}
+                    ref={menuRef}
                 >
                     <RiCloseFill onClick={()=> setToggle(false)} />
                     <ul>
