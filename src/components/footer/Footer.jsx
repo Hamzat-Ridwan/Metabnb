@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='wrap'>
     <div className='footer'>
         <div >
-            <Meta  />
+            <Meta className='meta' />
             <div className='socials'>
                 <Fb />
                 <Inst />
