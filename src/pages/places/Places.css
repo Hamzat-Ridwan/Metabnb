@@ -45,7 +45,7 @@
 @media screen and (max-width: 1025px) {
     .places .cards-con{
         grid-template-columns: 1fr 1fr;
-        min-width: 70vw;
+        max-width: 90vw;
     }
 
     .places .filters .texts{

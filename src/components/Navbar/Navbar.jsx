@@ -34,7 +34,7 @@ const Navbar = () => {
             <li><Link >NFTs</Link></li>
             <li><Link >Community</Link></li>
         </ul>
-        <button onClick={()=> {setShowConnect(true), console.log(showConnect)}}>Connect wallet</button>
+        <button onClick={()=> {setShowConnect(true)}}>Connect wallet</button>
         <div className='menu'>
             <HiMenuAlt3 onClick={()=> setToggle(true)}/>
             <AnimatePresence>
