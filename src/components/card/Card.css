@@ -2,8 +2,8 @@
     padding: 4%;
     border: 1px solid #D7D7D7;
     border-radius: 15px;
-    width: 282px;
-    /* height: 372px; */
+    /* width: 282px; */
+    width: 21vw;
 }
 
 .card img{
@@ -32,8 +32,8 @@
     margin-right: 5px;
 }
 
-@media screen and (max-width: 450px) {
-    /* .card{
-        width: 73vw;
-    } */
+@media screen and (max-width: 850px) {
+    .card{
+        width: 282px;
+    }
 }
