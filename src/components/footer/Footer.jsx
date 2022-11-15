@@ -9,6 +9,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
+    <div className='wrap'>
     <div className='footer'>
         <div >
             <Meta  />
@@ -16,10 +17,6 @@ const Footer = () => {
                 <Fb />
                 <Inst />
                 <Twitter />
-            </div>
-            <div className='copy'>
-                <Copy />
-                <p>2022 Metabnb</p>
             </div>
         </div>
         <div>
@@ -48,6 +45,11 @@ const Footer = () => {
                 <li><Link>Career</Link></li>
                 <li><Link>Contact us</Link></li>
             </ul>
+        </div>
+    </div>
+        <div className='copy'>
+            <Copy />
+            <p>2022 Metabnb</p>
         </div>
     </div>
   )

@@ -33,6 +33,14 @@
     font-size: 14px;
 }
 
+.discover .img{
+    max-width: 60%;
+}
+
+.discover .img img{
+    width: 100%;
+}
+
 @media screen and (max-width: 850px) {
     .discover{
         display: block;
@@ -45,6 +53,7 @@
     .discover .img{
         width: 90vw;
         margin-top: 40px;
+        max-width: none;
     }
     .discover .img img{
         width: 100%;

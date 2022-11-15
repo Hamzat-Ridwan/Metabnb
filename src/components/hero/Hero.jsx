@@ -17,7 +17,7 @@ const Hero = () => {
             <h1>Rent a <span>Place</span> away from <span>Home</span> in the <span>Metaverse</span></h1>
             <p>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</p>
             <div className='search'>
-                <input type='search' placeHolder='Search for location' />
+                <input type='search' placeholder='Search for location' />
                 <button>Search</button>
             </div>
         </div>

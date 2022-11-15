@@ -1,3 +1,10 @@
+.places .container{
+    padding: 0 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .places .cards-con{
     display: grid;
     grid-gap: 15px;
@@ -5,7 +12,6 @@
     align-items: center;
     justify-items: center;
     margin: 0 auto;
-    padding: 0 5%;
     margin-bottom: 75px;
 }
 
@@ -45,7 +51,7 @@
 @media screen and (max-width: 850px) {
     .places .cards-con{
         grid-template-columns: 1fr 1fr;
-        max-width: 90vw;
+        min-width: 70vw;
     }
 
     .places .filters .texts{
@@ -69,7 +75,7 @@
     .places .cards-con{
         grid-template-columns: 1fr;
     }
-
+ 
     .places .filters .texts{
         width: 58%;
         overflow: scroll;

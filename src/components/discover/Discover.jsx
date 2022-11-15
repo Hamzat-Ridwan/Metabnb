@@ -16,5 +16,5 @@ const Discover = () => {
     </section>
   )
 }
-
+ 
 export default Discover

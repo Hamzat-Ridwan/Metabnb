@@ -27,12 +27,14 @@ const Places = () => {
                 <Setting />
             </div>
         </div>
-        <div className='cards-con'>
-            {
-                PlacesCards.map((img, index)=> (
-                    <Card key={index} img={img} />
-                ))
-            }
+        <div className='container'>
+            <div className='cards-con'>
+                {
+                    PlacesCards.map((img, index)=> (
+                        <Card key={index} img={img} />
+                    ))
+                }
+            </div>
         </div>
         <Footer />
         <Connect />
