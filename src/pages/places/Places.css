@@ -42,11 +42,6 @@
     margin-right: 20px;
 }
 
-/* @media screen and (max-width: 1200px) {
-    .places .cards-con{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-} */
 
 @media screen and (max-width: 850px) {
     .places .cards-con{
@@ -63,12 +58,6 @@
         white-space: nowrap;
     }
 }
-
-/* @media screen and (max-width: 600px) {
-    .places .cards-con{
-        grid-template-columns: 1fr;
-    }
-} */
 
 @media screen and (max-width: 600px) {
 

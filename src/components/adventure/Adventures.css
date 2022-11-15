@@ -24,12 +24,6 @@
     margin: 0 auto;
 }
 
-/* @media screen and (max-width: 1200px) {
-    .adventures .cards-con{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-} */
-
 @media screen and (max-width: 850px) {
     .adventures .cards-con{
         grid-template-columns: 1fr 1fr;
