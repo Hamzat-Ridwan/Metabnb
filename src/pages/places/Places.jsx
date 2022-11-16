@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from '../../components/card/Card'
-import Connect from '../../components/connect/Connect'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import { PlacesCards } from '../../constants/CardsList'
@@ -37,7 +36,6 @@ const Places = () => {
             </div>
         </div>
         <Footer />
-        <Connect />
     </div>
   )
 }

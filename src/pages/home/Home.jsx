@@ -1,6 +1,5 @@
 import React from 'react'
 import Adventures from '../../components/adventure/Adventures'
-import Connect from '../../components/connect/Connect'
 import Discover from '../../components/discover/Discover'
 import Footer from '../../components/footer/Footer'
 import Hero from '../../components/hero/Hero'
@@ -12,7 +11,6 @@ const Home = () => {
         <Navbar /> 
         <Hero />
         <Adventures />
-        <Connect />
         <Discover />
         <Footer />
     </div>
